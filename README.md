@@ -1,20 +1,29 @@
 # Memory Game Project
 
-## Table of Contents
+This is one of the projects that I worked on to complete Front-End Web Developer Nanodegree Program on Udacity. A HTML file, a CSS file, and a JavaScript file were provided from Udacity. Also, a shuffle function which will be mentioned below in the dependencies section, numerous helpful comments and directions were written in the JavaScript file. I coded most of the JavaScript functions and edited some elements and classes in the HTML file and CSS file as well. Since I created the game responsive, this game should work on any devices.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## Dependencies
+The shuffle function was provided by Udacity which they from the following website:
+ :http://stackoverflow.com/a/2450976
 
-## Instructions
+## Overview
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+First you will see 16 black cards on a deck when you open this game. There are 8 matching symbols on those cards and the player has to click on those cards to flip it over. The player should click on other card which is not opened yet. When the symbol of the 2 open cards are matching, the color of those matching cards will turn from #02b3e4 to  #02ccba. If the symbol of the 2 open cards are not matching, they will be flipped over and turn to black again.
 
-To get started, open `js/app.js` and start building out the app's functionality
+On top of the screen, the following is displayed:
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+  1. The numbers of moves - selecting matching cards are not consider as move, which means it is 0 move.
+  2. The numbers of stars: 
+   * when the game is completed within 0 to 10 moves, 3 stars will be displayed.
+   * when the game is completed within 11 to 15 moves, 2 stars will be displayed.
+   * when the game is completed more than 15 moves, 1 stars will be displayed.
+  3. A timer - starts when the first card is clicked and it stops when the last matching cards are found.
+  4. A reset button - shuffles the cards and create a new deck to start a new game, resets the number of moves and stars and timer, when it is clicked.
+  
+When all the matching cards all found, the modal window pops up and the following will be displayed:
 
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+  * the numbers of moves
+  * the numbers of stars
+  * how much time it took
+  * exit button - closes the modal window.
+  * new game button - creates a new game.
