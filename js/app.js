@@ -67,6 +67,7 @@ const modalTimeStat = document.querySelector('.modal__time');
 const modalMovesStat = document.querySelector('.modal__moves');
 const closeModalButton = document.querySelector('.modal__exit');
 const newGameModalButton = document.querySelector('.modal__newgame');
+const modal = document.querySelector('.modal__background');
 
 let moves = 0;
 let timerID;

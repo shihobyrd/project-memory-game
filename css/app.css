@@ -22,6 +22,7 @@ body {
 }
 
 .container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,4 +167,48 @@ h1 {
 .modal__button {
     width: 100px;
     height: 30px;
+}
+
+/*
+ * Styles for responsive
+ */
+ @media screen and (max-width: 400px) {
+    .deck {
+        padding: 15px;
+        width: 300px;
+        min-height: 300px;
+    }
+    .deck .card {
+        width: 60px;
+        height: 60px;
+    }
+    .score-panel {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 569px) {
+    .deck {
+        padding: 18px;
+        width: 400px;
+        min-height: 400px;
+    }
+
+    .deck .card {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+    .deck {
+        padding: 30px;
+        width: 550px;
+        min-height: 550px;
+    }
+
+    .deck .card {
+        width: 100px;
+        height: 100px;
+    }
 }
